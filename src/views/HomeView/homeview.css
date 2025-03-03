@@ -1,0 +1,25 @@
+.center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.btn-wrap {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.btn {
+  width: 86%;
+  margin: 0 auto;
+  display: block;
+  outline: none;
+  border: 1px solid transparent;
+  background-color: #000000;
+  padding: 10px 0;
+  font-size: 20px;
+  line-height: 1.2;
+  color: #fff;
+  font-weight: 700;
+  border-radius: 12px;
+}
