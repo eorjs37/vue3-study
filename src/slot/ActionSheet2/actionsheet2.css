@@ -1,0 +1,87 @@
+.actionshhet-wrap {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 101;
+  background: rgba(0, 0, 0, 0.7);
+}
+
+.bottomsheet {
+  position: absolute;
+  height: 80%;
+  width: 100%;
+  background-color: #fff;
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+  bottom: 0;
+}
+
+.bottomsheet-header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 54px;
+  display: flex;
+  justify-content: center;
+}
+
+.header-title {
+  font-size: 20px;
+  text-align: center;
+  font-weight: 700;
+  line-height: 1.2;
+  margin-top: 20px;
+}
+
+.top-bar {
+  position: absolute;
+  top: 5px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 44px;
+  height: 6px;
+  background: #242a3014;
+  border-radius: 100px;
+}
+
+.bottomsheet-body {
+  margin-top: 54px;
+  height: calc(100% - 108px);
+  position: relative;
+}
+
+.bottomsheet-footer {
+  position: absolute;
+  bottom: 0;
+  height: 54px;
+  width: 100%;
+}
+
+/* Fade In Animation */
+.fade-enter-active,
+.fade-leave-active {
+  transition: opacity 0.5s ease;
+}
+
+.fade-enter-from,
+.fade-leave-to {
+  opacity: 0;
+}
+
+/* BottomToTop In Animation */
+.bottomtotop-enter-active,
+.bottomtotop-leave-active {
+  transition: 0.5s;
+  position: absolute;
+  bottom: 0;
+}
+
+.bottomtotop-enter-from,
+.bottomtotop-leave-to {
+  transition: 0.5s;
+  position: absolute;
+  bottom: -100%;
+}

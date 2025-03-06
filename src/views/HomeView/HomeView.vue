@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import ActionSheet from '@/slot/ActionSheet/ActionSheet.vue'
+import ActionSheet2 from '@/slot/ActionSheet2/ActionSheet2.vue'
 import { ref } from 'vue'
 
 const isActionSheet = ref(false)
@@ -15,11 +16,9 @@ function onOutSideClick() {
 <template>
   <div class="center">
     <button @click="openActionSheet">액션시트</button>
-    <ActionSheet
-      @outsidelick="onOutSideClick"
-      :roottransition="'fade'"
-      :isshowactionsheet="isActionSheet"
-    >
+    <ActionSheet2 :isshowactionsheet="isActionSheet"></ActionSheet2>
+
+    <ActionSheet @outsidelick="onOutSideClick" :roottransition="'fade'" :isshowactionsheet="false">
       <template #headetitle> ActionSheet 헤더 </template>
 
       <template #bottomsheetfooter>
